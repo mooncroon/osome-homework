@@ -1,3 +1,4 @@
+Чек-лист: 
 1. При изменении метода оплаты выбранный метод сохраняется
   1.1. С Credit or debit card на Bank transfer
   1.2. C Bank transfer на Credit or debit card
