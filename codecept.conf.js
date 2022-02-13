@@ -14,23 +14,23 @@ exports.config = {
     Puppeteer: {
       url: 'https://stage.my.osome.club/',
       show: true,
-      windowSize: '1920×1080'
+      windowSize: '1920×1080',
     },
-    REST:       {
+    REST: {
       endpoint: 'https://stage.my.osome.club/',
-  },
-  ChaiWrapper : {
-    require: "codeceptjs-chai",
-  }
+    },
+    ChaiWrapper: {
+      require: 'codeceptjs-chai',
+    },
   },
   include: {
     I: './steps_file.js',
     loginPage: './pages/login.js',
     billingPage: './pages/billing.js',
     authApi: './api/auth.js',
-    navigationBar: './fragments/navigation_bar.js'
+    navigationBar: './fragments/navigation_bar.js',
   },
   bootstrap: null,
   mocha: {},
-  name: 'osome-homework'
-}
+  name: 'osome-homework',
+};

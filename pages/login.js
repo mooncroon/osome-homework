@@ -4,14 +4,14 @@ module.exports = {
   url: 'https://stage.my.osome.club/',
 
   loginForm: {
-    fields:{
+    fields: {
       phoneNumber: 'input[name=phone]',
       smsCode: 'input[data-testid="LoginCode"]',
     },
 
     buttons: {
       signIn: '//button[contains(text(), "SIGN IN")]',
-      continue: '//button[contains(text(), "Continue")]'
+      continue: '//button[contains(text(), "Continue")]',
 
     },
     // countrySelector: {
@@ -27,15 +27,14 @@ module.exports = {
     //   }
     // },
 
-    loginByPhone(phoneNumber, code){
-        I.seeElement(this.fields.phoneNumber)        
-        I.fillField(this.fields.phoneNumber, phoneNumber);
-        I.click(this.buttons.signIn);
-        I.waitForElement(this.fields.smsCode, 5)
-        I.fillField(this.fields.smsCode, code);
-        I.click(this.buttons.continue);
-    }
-  }
+    loginByPhone(phoneNumber, code) {
+      I.seeElement(this.fields.phoneNumber);
+      I.fillField(this.fields.phoneNumber, phoneNumber);
+      I.click(this.buttons.signIn);
+      I.waitForElement(this.fields.smsCode, 5);
+      I.fillField(this.fields.smsCode, code);
+      I.click(this.buttons.continue);
+    },
+  },
 
-
-}
+};
