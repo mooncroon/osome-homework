@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "codeceptjs": "^3.3.0",
+    "codeceptjs-chai": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "puppeteer": "^13.3.1"
+  }
+}
