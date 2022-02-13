@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "codeceptjs": "^3.3.0"
+    "codeceptjs": "^3.3.0",
+    "codeceptjs-chai": "^2.3.2"
   },
   "devDependencies": {
     "puppeteer": "^13.3.1"

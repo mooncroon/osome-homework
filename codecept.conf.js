@@ -8,17 +8,27 @@ setHeadlessWhen(process.env.HEADLESS);
 setCommonPlugins();
 
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   output: './output',
   helpers: {
     Puppeteer: {
       url: 'https://stage.my.osome.club/',
       show: true,
-      windowSize: '1200x900'
-    }
+      windowSize: '1920×1080'
+    },
+    REST:       {
+      endpoint: 'https://stage.my.osome.club/',
+  },
+  ChaiWrapper : {
+    require: "codeceptjs-chai",
+  }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    loginPage: './pages/login.js',
+    billingPage: './pages/billing.js',
+    authApi: './api/auth.js',
+    navigationBar: './fragments/navigation_bar.js'
   },
   bootstrap: null,
   mocha: {},
