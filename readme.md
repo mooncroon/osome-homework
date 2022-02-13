@@ -1,14 +1,16 @@
 # osome-homework
 Automated test for osome 
 
-Запуск:
-  В корне проекта:
-    1.npm install
-    2.npx codeceptj run 
+Запуск:  
+&ensp;В корне проекта:
+  ```
+    npm install  
+    npx codeceptj run 
+  ```
 
 Чек-лист:
-1. При изменении метода оплаты выбранный метод сохраняется
-  1.1. С Credit or debit card на Bank transfer
+1. При изменении метода оплаты выбранный метод сохраняется  
+  1.1. С Credit or debit card на Bank transfer  
   1.2. C Bank transfer на Credit or debit card
 2. При изменении метода оплаты он меняется для всех активных продуктов  
 3. При добавлении новой карты она сохраняется и появляется в списке карт
